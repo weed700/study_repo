@@ -4,8 +4,7 @@
 
 * $ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 * .tmux.conf 에 추가
-<shell>
-  
+```console 
   # List of plugins
   set -g @plugin 'tmux-plugins/tpm'
   set -g @plugin 'tmux-plugins/tmux-sensible'
@@ -21,15 +20,12 @@
 
   # type this in terminal if tmux is already running
   $ tmux source ~/.tmux.conf
-
-</shell>
+```
 
 ## tmux Resurrect 플러그인
 
 * .tmux.conf 에 추가
-<shell>
-
+```console
 set -g @plugin 'tmux-plugins/tmux-resurrect'
-
-</shell>
+```
  * prefix + I(대문자 i)  눌러서 설치
