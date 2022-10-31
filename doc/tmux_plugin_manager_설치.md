@@ -1,4 +1,6 @@
-* Tmux Plugin Manager 설치
+# Tmux 환경 저장하기 위해 설치해야할 패키지 및 설치 방법
+
+## Tmux Plugin Manager 설치
 
  * $ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
  * .tmux.conf 에 추가
@@ -19,7 +21,7 @@
      \# type this in terminal if tmux is already running
      $ tmux source ~/.tmux.conf
 
-* tmux Resurrect 플러그인
+## tmux Resurrect 플러그인
 
  * .tmux.conf 에 추가
  * set -g @plugin 'tmux-plugins/tmux-resurrect'
