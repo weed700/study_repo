@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-12-02T02:25:01.934Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="pHLxqSQYf6RT8KkYmK12" version="20.5.1" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2022-12-02T02:28:10.150Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="7fZr9KCTPuWcv2ZEEgI7" version="20.5.1" type="github" pages="2">
   <diagram id="MN1tpE6yu0p90DHYZf7P" name="인라인 네트워크 레이드 아키텍처">
     <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -46,7 +46,7 @@
         <mxCell id="yECEQW9LtqZ5MZvgmVVH-12" value="pool" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
           <mxGeometry x="490" y="460" width="60" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="yECEQW9LtqZ5MZvgmVVH-13" value="RAID" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#CCFFE6;strokeColor=#9673a6;" vertex="1" parent="1">
+        <mxCell id="yECEQW9LtqZ5MZvgmVVH-13" value="RAID" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
           <mxGeometry x="170" y="400" width="380" height="40" as="geometry" />
         </mxCell>
         <mxCell id="yECEQW9LtqZ5MZvgmVVH-15" value="Target" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
