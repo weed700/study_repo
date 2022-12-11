@@ -90,8 +90,8 @@
    <widget class="QPushButton" name="OK">
     <property name="geometry">
      <rect>
-      <x>580</x>
-      <y>160</y>
+      <x>540</x>
+      <y>200</y>
       <width>91</width>
       <height>28</height>
      </rect>
@@ -317,7 +317,7 @@
     <property name="geometry">
      <rect>
       <x>510</x>
-      <y>486</y>
+      <y>493</y>
       <width>80</width>
       <height>16</height>
      </rect>
@@ -333,7 +333,7 @@
     <property name="geometry">
      <rect>
       <x>510</x>
-      <y>567</y>
+      <y>574</y>
       <width>80</width>
       <height>16</height>
      </rect>
@@ -345,11 +345,11 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="hba_2">
+   <widget class="QLabel" name="sdfds">
     <property name="geometry">
      <rect>
       <x>510</x>
-      <y>459</y>
+      <y>466</y>
       <width>80</width>
       <height>16</height>
      </rect>
@@ -361,11 +361,11 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="nic_2">
+   <widget class="QLabel" name="sadf">
     <property name="geometry">
      <rect>
       <x>510</x>
-      <y>405</y>
+      <y>412</y>
       <width>80</width>
       <height>16</height>
      </rect>
@@ -381,7 +381,7 @@
     <property name="geometry">
      <rect>
       <x>510</x>
-      <y>324</y>
+      <y>331</y>
       <width>80</width>
       <height>16</height>
      </rect>
@@ -397,7 +397,7 @@
     <property name="geometry">
      <rect>
       <x>510</x>
-      <y>297</y>
+      <y>304</y>
       <width>80</width>
       <height>16</height>
      </rect>
@@ -413,7 +413,7 @@
     <property name="geometry">
      <rect>
       <x>510</x>
-      <y>594</y>
+      <y>601</y>
       <width>80</width>
       <height>16</height>
      </rect>
@@ -429,7 +429,7 @@
     <property name="geometry">
      <rect>
       <x>510</x>
-      <y>432</y>
+      <y>439</y>
       <width>80</width>
       <height>16</height>
      </rect>
@@ -445,7 +445,7 @@
     <property name="geometry">
      <rect>
       <x>510</x>
-      <y>351</y>
+      <y>358</y>
       <width>80</width>
       <height>16</height>
      </rect>
@@ -461,7 +461,7 @@
     <property name="geometry">
      <rect>
       <x>510</x>
-      <y>378</y>
+      <y>385</y>
       <width>80</width>
       <height>16</height>
      </rect>
@@ -473,11 +473,11 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="w_2">
+   <widget class="QLabel" name="wa_2">
     <property name="geometry">
      <rect>
       <x>510</x>
-      <y>513</y>
+      <y>520</y>
       <width>80</width>
       <height>16</height>
      </rect>
@@ -493,7 +493,7 @@
     <property name="geometry">
      <rect>
       <x>510</x>
-      <y>540</y>
+      <y>547</y>
       <width>80</width>
       <height>16</height>
      </rect>
@@ -509,7 +509,7 @@
     <property name="geometry">
      <rect>
       <x>570</x>
-      <y>597</y>
+      <y>604</y>
       <width>80</width>
       <height>16</height>
      </rect>
@@ -525,7 +525,7 @@
     <property name="geometry">
      <rect>
       <x>570</x>
-      <y>354</y>
+      <y>361</y>
       <width>80</width>
       <height>16</height>
      </rect>
@@ -537,11 +537,11 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="w_3">
+   <widget class="QLabel" name="wa_3">
     <property name="geometry">
      <rect>
       <x>570</x>
-      <y>516</y>
+      <y>523</y>
       <width>80</width>
       <height>16</height>
      </rect>
@@ -553,11 +553,11 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="nic_3">
+   <widget class="QLabel" name="sadf_2">
     <property name="geometry">
      <rect>
       <x>570</x>
-      <y>408</y>
+      <y>415</y>
       <width>80</width>
       <height>16</height>
      </rect>
@@ -573,7 +573,7 @@
     <property name="geometry">
      <rect>
       <x>570</x>
-      <y>462</y>
+      <y>469</y>
       <width>80</width>
       <height>16</height>
      </rect>
@@ -589,7 +589,7 @@
     <property name="geometry">
      <rect>
       <x>570</x>
-      <y>300</y>
+      <y>307</y>
       <width>80</width>
       <height>16</height>
      </rect>
@@ -605,7 +605,7 @@
     <property name="geometry">
      <rect>
       <x>570</x>
-      <y>489</y>
+      <y>496</y>
       <width>80</width>
       <height>16</height>
      </rect>
@@ -621,7 +621,7 @@
     <property name="geometry">
      <rect>
       <x>570</x>
-      <y>381</y>
+      <y>388</y>
       <width>80</width>
       <height>16</height>
      </rect>
@@ -637,7 +637,7 @@
     <property name="geometry">
      <rect>
       <x>570</x>
-      <y>327</y>
+      <y>334</y>
       <width>80</width>
       <height>16</height>
      </rect>
@@ -653,7 +653,7 @@
     <property name="geometry">
      <rect>
       <x>570</x>
-      <y>435</y>
+      <y>442</y>
       <width>80</width>
       <height>16</height>
      </rect>
@@ -669,7 +669,7 @@
     <property name="geometry">
      <rect>
       <x>570</x>
-      <y>543</y>
+      <y>550</y>
       <width>80</width>
       <height>16</height>
      </rect>
@@ -685,7 +685,7 @@
     <property name="geometry">
      <rect>
       <x>570</x>
-      <y>570</y>
+      <y>577</y>
       <width>80</width>
       <height>16</height>
      </rect>
@@ -697,7 +697,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_11">
+   <widget class="QLineEdit" name="c_8">
     <property name="geometry">
      <rect>
       <x>380</x>
@@ -746,7 +746,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_4">
+   <widget class="QLineEdit" name="c_6">
     <property name="geometry">
      <rect>
       <x>380</x>
@@ -804,7 +804,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit">
+   <widget class="QLineEdit" name="c_2">
     <property name="geometry">
      <rect>
       <x>380</x>
@@ -834,7 +834,7 @@
     <property name="geometry">
      <rect>
       <x>430</x>
-      <y>594</y>
+      <y>601</y>
       <width>80</width>
       <height>16</height>
      </rect>
@@ -846,11 +846,11 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_39">
+   <widget class="QLabel" name="cpu">
     <property name="geometry">
      <rect>
       <x>430</x>
-      <y>567</y>
+      <y>574</y>
       <width>80</width>
       <height>16</height>
      </rect>
@@ -862,11 +862,11 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="nic2_1">
+   <widget class="QLabel" name="nic_2">
     <property name="geometry">
      <rect>
       <x>430</x>
-      <y>432</y>
+      <y>439</y>
       <width>80</width>
       <height>16</height>
      </rect>
@@ -917,7 +917,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_5">
+   <widget class="QLineEdit" name="c_7">
     <property name="geometry">
      <rect>
       <x>380</x>
@@ -927,7 +927,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_9">
+   <widget class="QLineEdit" name="c_3">
     <property name="geometry">
      <rect>
       <x>380</x>
@@ -937,11 +937,11 @@
      </rect>
     </property>
    </widget>
-   <widget class="QLabel" name="label_26">
+   <widget class="QLabel" name="disk_1">
     <property name="geometry">
      <rect>
       <x>430</x>
-      <y>351</y>
+      <y>358</y>
       <width>80</width>
       <height>16</height>
      </rect>
@@ -998,7 +998,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_8">
+   <widget class="QLineEdit" name="c_1">
     <property name="enabled">
      <bool>true</bool>
     </property>
@@ -1055,7 +1055,7 @@
     <property name="geometry">
      <rect>
       <x>430</x>
-      <y>324</y>
+      <y>331</y>
       <width>80</width>
       <height>16</height>
      </rect>
@@ -1090,7 +1090,7 @@
     <property name="geometry">
      <rect>
       <x>430</x>
-      <y>459</y>
+      <y>466</y>
       <width>80</width>
       <height>16</height>
      </rect>
@@ -1131,7 +1131,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_13">
+   <widget class="QLineEdit" name="c_11">
     <property name="geometry">
      <rect>
       <x>380</x>
@@ -1141,11 +1141,11 @@
      </rect>
     </property>
    </widget>
-   <widget class="QLabel" name="label_35">
+   <widget class="QLabel" name="hba_2">
     <property name="geometry">
      <rect>
       <x>430</x>
-      <y>486</y>
+      <y>493</y>
       <width>80</width>
       <height>16</height>
      </rect>
@@ -1211,7 +1211,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_6">
+   <widget class="QLineEdit" name="c_9">
     <property name="geometry">
      <rect>
       <x>380</x>
@@ -1225,7 +1225,7 @@
     <property name="geometry">
      <rect>
       <x>430</x>
-      <y>297</y>
+      <y>304</y>
       <width>80</width>
       <height>16</height>
      </rect>
@@ -1237,11 +1237,11 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_37">
+   <widget class="QLabel" name="w_2">
     <property name="geometry">
      <rect>
       <x>430</x>
-      <y>540</y>
+      <y>547</y>
       <width>80</width>
       <height>16</height>
      </rect>
@@ -1289,7 +1289,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_10">
+   <widget class="QLineEdit" name="c_4">
     <property name="geometry">
      <rect>
       <x>380</x>
@@ -1299,7 +1299,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_3">
+   <widget class="QLineEdit" name="c_5">
     <property name="geometry">
      <rect>
       <x>380</x>
@@ -1351,7 +1351,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_7">
+   <widget class="QLineEdit" name="c_12">
     <property name="geometry">
      <rect>
       <x>380</x>
@@ -1365,7 +1365,7 @@
     <property name="geometry">
      <rect>
       <x>430</x>
-      <y>405</y>
+      <y>412</y>
       <width>80</width>
       <height>16</height>
      </rect>
@@ -1409,7 +1409,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_12">
+   <widget class="QLineEdit" name="c_10">
     <property name="geometry">
      <rect>
       <x>380</x>
@@ -1435,11 +1435,11 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_27">
+   <widget class="QLabel" name="disk_2">
     <property name="geometry">
      <rect>
       <x>430</x>
-      <y>378</y>
+      <y>385</y>
       <width>80</width>
       <height>16</height>
      </rect>
@@ -1455,7 +1455,7 @@
     <property name="geometry">
      <rect>
       <x>430</x>
-      <y>513</y>
+      <y>520</y>
       <width>80</width>
       <height>16</height>
      </rect>
