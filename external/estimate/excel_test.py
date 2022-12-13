@@ -1,6 +1,7 @@
 import pandas as pd
 
-e = pd.read_excel('AS500+PD 견적 양식.xlsm',engine='openpyxl',index_col=[2,3,5,6])
+e = pd.read_excel('AS500+PD 견적 양식.xlsm',engine='openpyxl',index_col=[8,9,10,11])
+
 
 name=[]
 for temp in e.index:
@@ -10,7 +11,7 @@ print(set(name))
 dic={}
 
 for t in set(name):
-    print('start : ',t)
+#    print('start : ',t)
     l_1=[]
     for temp2 in e.index:
         #print('temp: ',temp2[0])

@@ -1,5 +1,6 @@
 import sys
 import pandas as pd
+import math
 
 from PyQt5.QtWidgets import *
 from PyQt5 import uic
@@ -7,12 +8,26 @@ from PyQt5.QAxContainer import *
 from PyQt5.QtGui import * 
 from PyQt5.QtCore import QDate, Qt
 
+# form_class2 = uic.loadUi("s_window.ui")[0]
+
+# class Est_Manager(QMainWindow, form_class2):
+
+#     def __init__(self):
+#         super().__init__()
+#         self.setUI()
+#         self.setWindowTitle("견적 담당자")
+#         self.setWindowIcon(QIcon("gluesys_logo.png"))
 
 form_class = uic.loadUiType("main_windows.ui")[0]
 
 class MyWindow(QMainWindow, form_class):
     model_name = ''
     detail_model_name = ''
+    est_manager_list ={'이사 박 근 식':['010-5669-3172','gspark@gluesys.com','5371'], 
+                       '이사 허 남 중':['010-3741-0869','njheo@gluesys.com','8158'],
+                       '이사 김 재 호':['010-7520-9425','justin@gluesys.com','5302'],
+                       '대리 우 동 현':['010-5769-7610','dhwoo@gluesys.com','5301'],
+                       '대리 김 정':['010-3153-3327','jkim@gluesys.com','5374']}
 
     def __init__(self):
         super().__init__()
@@ -25,13 +40,19 @@ class MyWindow(QMainWindow, form_class):
     def setUI(self):
         self.setupUi(self)  # window 창 
         self.Model_Check() # 모델 체크 함수
+        self.Manager()
 
-        #self.Combobox_list()
         # 오늘 날짜 입력
         now = QDate.currentDate()
         self.date.setText(now.toString('yyyy년 MM월 dd일'))
 
         self.OK.clicked.connect(self.button) # 최종 버튼
+
+
+    def Manager(self):
+        #print(self.est_manager_list.keys())
+        for m in self.est_manager_list.keys():
+            self.est_manager.addItem(m)
 
     # 모델 DB 변수 저장
     def Excel_DB(self):
@@ -78,8 +99,6 @@ class MyWindow(QMainWindow, form_class):
             elif 'GW Cluster' == n:
                 dic[n]=l2
             
-           
-
         return dic
 
 
@@ -124,7 +143,13 @@ class MyWindow(QMainWindow, form_class):
                     self.w_box_2.addItem(self.est_db[temp][i][2])
                     if '옵션SW' == self.est_db[temp][i][0]:
                         self.op_box.addItem(self.est_db[temp][i][2])
-        
+
+        # 할인율
+        self.disc=''
+        for i in range(1,101):
+            d = str(i)+'%'
+            self.disc_box.addItem(d)
+
         # 콤보박스 이벤트 발생 시그널
         self.model_box.currentTextChanged.connect(lambda: self.combobox_event(db_key))
         self.memory_box.currentTextChanged.connect(lambda: self.combobox_event(db_key))
@@ -137,7 +162,43 @@ class MyWindow(QMainWindow, form_class):
         self.w_box_1.currentTextChanged.connect(lambda: self.combobox_event(db_key))
         self.w_box_2.currentTextChanged.connect(lambda: self.combobox_event(db_key))
         self.op_box.currentTextChanged.connect(lambda: self.combobox_event(db_key))
+
+        
     
+    # def Disc_func(self,key):
+    #     d=self.sender()
+    #     val=d.currentText().split('%')
+    #     disc=(100-int(val[0]))/100
+    #     t=int(self.mod_1.text().replace(',', ''))*disc
+    #     a=math.trunc(t)
+    #     print(key, disc, int(a))
+    #     if 'model_box' == key:
+    #         self.mod_1.setText(format(int(a),',d'))
+    #     elif 'memory_box' == key:
+    #         self.mem_1.setText(format(int(a)*disc,',d'))
+    #     elif 'disk_box_1' == key:
+    #         self.disk_1.setText(format(int(a)*disc,',d'))
+    #     elif 'disk_box_2' == key:
+    #         self.disk_2.setText(format(int(a)*disc,',d'))
+    #     elif 'nic_box_1' == key:
+    #         self.nic_1.setText(format(int(a)*disc,',d'))
+    #     elif 'nic_box_2' == key:
+    #         self.nic_2.setText(format(int(a)*disc,',d'))
+    #     elif 'hba_box_1' == key:
+    #         self.hba_1.setText(format(int(a)*disc,',d'))
+    #     elif 'hba_box_2' == key:
+    #         self.hba_2.setText(format(int(a)*disc,',d'))
+    #     elif 'w_box_1' == key:
+    #         self.w_1.setText(format(int(a)*disc,',d'))
+    #     elif 'w_box_2' == key:
+    #         self.w_2.setText(format(int(a)*disc,',d'))
+    #     elif 'cpu_box' == key:
+    #         self.cpu.setText(format(int(a)*disc,',d'))
+    #     elif 'op_box' == key:
+    #         self.op_1.setText(format(int(a)*disc,',d'))
+
+        
+
     def Combobox_detail_list(self,db_key):
         for i in range(0,len(self.detail_model_db[db_key])):
             if 'GW Single' == db_key:
@@ -148,9 +209,7 @@ class MyWindow(QMainWindow, form_class):
             #     self.cpu_box.addItem(self.detail_model_db[db_key][i][1])
 
         self.cpu_box.currentTextChanged.connect(lambda: self.combobox_event(db_key))
-
         
-
     # 수량 입력 창
     def lineedit_func(self,key,v):
         l=self.sender()
@@ -159,6 +218,8 @@ class MyWindow(QMainWindow, form_class):
             a=0
         else:
             a=l.text()
+        
+        self.disc_box.currentTextChanged.connect(lambda: self.Disc_func(key))
 
         # 각 콤보박스와 수량 곱한 결과값 라벨로 출력
         if 'model_box' == key:
