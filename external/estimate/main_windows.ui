@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>698</width>
-    <height>656</height>
+    <width>948</width>
+    <height>677</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -26,8 +26,8 @@
    <widget class="QWidget" name="formLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>320</x>
-      <y>40</y>
+      <x>380</x>
+      <y>20</y>
       <width>181</width>
       <height>111</height>
      </rect>
@@ -44,7 +44,7 @@
       </widget>
      </item>
      <item row="0" column="1">
-      <widget class="QLineEdit" name="LineEdit_1"/>
+      <widget class="QLineEdit" name="company_name"/>
      </item>
      <item row="1" column="0">
       <widget class="QLabel" name="Label_2">
@@ -57,7 +57,7 @@
       </widget>
      </item>
      <item row="1" column="1">
-      <widget class="QLineEdit" name="LineEdit_2"/>
+      <widget class="QLineEdit" name="manager"/>
      </item>
      <item row="2" column="0">
       <widget class="QLabel" name="Label_3">
@@ -70,7 +70,7 @@
       </widget>
      </item>
      <item row="2" column="1">
-      <widget class="QLineEdit" name="LineEdi_3"/>
+      <widget class="QLineEdit" name="tel"/>
      </item>
      <item row="3" column="0">
       <widget class="QLabel" name="Label_4">
@@ -83,15 +83,15 @@
       </widget>
      </item>
      <item row="3" column="1">
-      <widget class="QLineEdit" name="LineEdit_4"/>
+      <widget class="QLineEdit" name="case_2"/>
      </item>
     </layout>
    </widget>
    <widget class="QPushButton" name="OK">
     <property name="geometry">
      <rect>
-      <x>540</x>
-      <y>200</y>
+      <x>650</x>
+      <y>220</y>
       <width>91</width>
       <height>28</height>
      </rect>
@@ -103,10 +103,10 @@
    <widget class="QWidget" name="formLayoutWidget_2">
     <property name="geometry">
      <rect>
-      <x>320</x>
-      <y>160</y>
-      <width>181</width>
-      <height>71</height>
+      <x>380</x>
+      <y>170</y>
+      <width>211</width>
+      <height>81</height>
      </rect>
     </property>
     <layout class="QFormLayout" name="formLayout_2">
@@ -121,7 +121,14 @@
       </widget>
      </item>
      <item row="0" column="1">
-      <widget class="QComboBox" name="ComboBox"/>
+      <widget class="QComboBox" name="est_manager">
+       <property name="maximumSize">
+        <size>
+         <width>300</width>
+         <height>16777215</height>
+        </size>
+       </property>
+      </widget>
      </item>
      <item row="1" column="0">
       <widget class="QLabel" name="Label_5">
@@ -144,10 +151,23 @@
       </widget>
      </item>
      <item row="2" column="1">
-      <widget class="QLineEdit" name="LineEdit"/>
+      <widget class="QLineEdit" name="est_count">
+       <property name="maximumSize">
+        <size>
+         <width>50</width>
+         <height>16777215</height>
+        </size>
+       </property>
+      </widget>
      </item>
      <item row="1" column="1">
       <widget class="QLabel" name="date">
+       <property name="maximumSize">
+        <size>
+         <width>300</width>
+         <height>16777215</height>
+        </size>
+       </property>
        <property name="text">
         <string>Today</string>
        </property>
@@ -158,10 +178,10 @@
    <widget class="QWidget" name="gridLayoutWidget_2">
     <property name="geometry">
      <rect>
-      <x>510</x>
-      <y>40</y>
-      <width>141</width>
-      <height>111</height>
+      <x>580</x>
+      <y>20</y>
+      <width>159</width>
+      <height>91</height>
      </rect>
     </property>
     <layout class="QGridLayout" name="gridLayout_2">
@@ -253,15 +273,21 @@
    <widget class="QWidget" name="horizontalLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>320</x>
-      <y>240</y>
-      <width>181</width>
-      <height>31</height>
+      <x>610</x>
+      <y>120</y>
+      <width>148</width>
+      <height>23</height>
      </rect>
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout">
      <item>
       <widget class="QLabel" name="label_10">
+       <property name="maximumSize">
+        <size>
+         <width>70</width>
+         <height>16777215</height>
+        </size>
+       </property>
        <property name="text">
         <string>할인율</string>
        </property>
@@ -271,7 +297,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QLineEdit" name="lineEdit_2"/>
+      <widget class="QComboBox" name="disc_box"/>
      </item>
     </layout>
    </widget>
@@ -279,12 +305,15 @@
     <property name="geometry">
      <rect>
       <x>30</x>
-      <y>40</y>
-      <width>281</width>
+      <y>20</y>
+      <width>321</width>
       <height>231</height>
      </rect>
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <property name="spacing">
+      <number>6</number>
+     </property>
      <item>
       <widget class="QGroupBox" name="groupBox">
        <property name="title">
@@ -313,1159 +342,1141 @@
      </item>
     </layout>
    </widget>
-   <widget class="QLabel" name="label_36">
-    <property name="geometry">
-     <rect>
-      <x>510</x>
-      <y>493</y>
-      <width>80</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>0</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_40">
-    <property name="geometry">
-     <rect>
-      <x>510</x>
-      <y>574</y>
-      <width>80</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>0</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="sdfds">
-    <property name="geometry">
-     <rect>
-      <x>510</x>
-      <y>466</y>
-      <width>80</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>0</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="sadf">
-    <property name="geometry">
-     <rect>
-      <x>510</x>
-      <y>412</y>
-      <width>80</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>0</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="memory_2">
-    <property name="geometry">
-     <rect>
-      <x>510</x>
-      <y>331</y>
-      <width>80</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>0</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="model_2">
-    <property name="geometry">
-     <rect>
-      <x>510</x>
-      <y>304</y>
-      <width>80</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>0</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="op_2">
-    <property name="geometry">
-     <rect>
-      <x>510</x>
-      <y>601</y>
-      <width>80</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>0</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="nic2_2">
-    <property name="geometry">
-     <rect>
-      <x>510</x>
-      <y>439</y>
-      <width>80</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>0</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_28">
-    <property name="geometry">
-     <rect>
-      <x>510</x>
-      <y>358</y>
-      <width>80</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>0</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_30">
-    <property name="geometry">
-     <rect>
-      <x>510</x>
-      <y>385</y>
-      <width>80</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>0</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="wa_2">
-    <property name="geometry">
-     <rect>
-      <x>510</x>
-      <y>520</y>
-      <width>80</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>0</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_38">
-    <property name="geometry">
-     <rect>
-      <x>510</x>
-      <y>547</y>
-      <width>80</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>0</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="op_3">
-    <property name="geometry">
-     <rect>
-      <x>570</x>
-      <y>604</y>
-      <width>80</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>0</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_29">
-    <property name="geometry">
-     <rect>
-      <x>570</x>
-      <y>361</y>
-      <width>80</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>0</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="wa_3">
-    <property name="geometry">
-     <rect>
-      <x>570</x>
-      <y>523</y>
-      <width>80</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>0</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="sadf_2">
-    <property name="geometry">
-     <rect>
-      <x>570</x>
-      <y>415</y>
-      <width>80</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>0</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="hba_3">
-    <property name="geometry">
-     <rect>
-      <x>570</x>
-      <y>469</y>
-      <width>80</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>0</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="model_3">
-    <property name="geometry">
-     <rect>
-      <x>570</x>
-      <y>307</y>
-      <width>80</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>0</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_41">
-    <property name="geometry">
-     <rect>
-      <x>570</x>
-      <y>496</y>
-      <width>80</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>0</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_31">
-    <property name="geometry">
-     <rect>
-      <x>570</x>
-      <y>388</y>
-      <width>80</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>0</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="memory_3">
-    <property name="geometry">
-     <rect>
-      <x>570</x>
-      <y>334</y>
-      <width>80</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>0</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="nic2_3">
-    <property name="geometry">
-     <rect>
-      <x>570</x>
-      <y>442</y>
-      <width>80</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>0</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_42">
-    <property name="geometry">
-     <rect>
-      <x>570</x>
-      <y>550</y>
-      <width>80</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>0</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_43">
-    <property name="geometry">
-     <rect>
-      <x>570</x>
-      <y>577</y>
-      <width>80</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>0</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="c_8">
-    <property name="geometry">
-     <rect>
-      <x>380</x>
-      <y>489</y>
-      <width>41</width>
-      <height>20</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QComboBox" name="disk_box_1">
-    <property name="geometry">
-     <rect>
-      <x>100</x>
-      <y>354</y>
-      <width>250</width>
-      <height>20</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QComboBox" name="hba_box_2">
-    <property name="geometry">
-     <rect>
-      <x>100</x>
-      <y>489</y>
-      <width>250</width>
-      <height>20</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_7">
-    <property name="geometry">
-     <rect>
-      <x>31</x>
-      <y>597</y>
-      <width>52</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>*옵션 SW</string>
-    </property>
-    <property name="textFormat">
-     <enum>Qt::AutoText</enum>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="c_6">
-    <property name="geometry">
-     <rect>
-      <x>380</x>
-      <y>435</y>
-      <width>41</width>
-      <height>20</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_11">
-    <property name="geometry">
-     <rect>
-      <x>440</x>
-      <y>280</y>
-      <width>60</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>소비자단가</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_22">
-    <property name="geometry">
-     <rect>
-      <x>31</x>
-      <y>570</y>
-      <width>53</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>CPU 업글</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_13">
-    <property name="geometry">
-     <rect>
-      <x>590</x>
-      <y>280</y>
-      <width>41</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>part No</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="c_2">
-    <property name="geometry">
-     <rect>
-      <x>380</x>
-      <y>327</y>
-      <width>41</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="baseSize">
-     <size>
-      <width>10</width>
-      <height>0</height>
-     </size>
-    </property>
-   </widget>
-   <widget class="QComboBox" name="hba_box_1">
-    <property name="geometry">
-     <rect>
-      <x>100</x>
-      <y>462</y>
-      <width>250</width>
-      <height>20</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLabel" name="op_1">
-    <property name="geometry">
-     <rect>
-      <x>430</x>
-      <y>601</y>
-      <width>80</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>0</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="cpu">
-    <property name="geometry">
-     <rect>
-      <x>430</x>
-      <y>574</y>
-      <width>80</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>0</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="nic_2">
-    <property name="geometry">
-     <rect>
-      <x>430</x>
-      <y>439</y>
-      <width>80</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>0</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QComboBox" name="cpu_box">
-    <property name="geometry">
-     <rect>
-      <x>100</x>
-      <y>570</y>
-      <width>250</width>
-      <height>20</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QComboBox" name="disk_box_2">
-    <property name="geometry">
-     <rect>
-      <x>100</x>
-      <y>381</y>
-      <width>250</width>
-      <height>20</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_2">
-    <property name="geometry">
-     <rect>
-      <x>31</x>
-      <y>327</y>
-      <width>36</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>메모리</string>
-    </property>
-    <property name="textFormat">
-     <enum>Qt::AutoText</enum>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="c_7">
-    <property name="geometry">
-     <rect>
-      <x>380</x>
-      <y>462</y>
-      <width>41</width>
-      <height>20</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="c_3">
-    <property name="geometry">
-     <rect>
-      <x>380</x>
-      <y>354</y>
-      <width>41</width>
-      <height>20</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLabel" name="disk_1">
-    <property name="geometry">
-     <rect>
-      <x>430</x>
-      <y>358</y>
-      <width>80</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>0</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label">
-    <property name="geometry">
-     <rect>
-      <x>31</x>
-      <y>300</y>
-      <width>24</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>모델</string>
-    </property>
-    <property name="textFormat">
-     <enum>Qt::AutoText</enum>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QComboBox" name="nic_box_1">
-    <property name="geometry">
-     <rect>
-      <x>100</x>
-      <y>408</y>
-      <width>250</width>
-      <height>20</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_21">
-    <property name="geometry">
-     <rect>
-      <x>31</x>
-      <y>489</y>
-      <width>51</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>HBA/IB 2</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="c_1">
-    <property name="enabled">
-     <bool>true</bool>
-    </property>
-    <property name="geometry">
-     <rect>
-      <x>380</x>
-      <y>300</y>
-      <width>41</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>16777215</width>
-      <height>16777215</height>
-     </size>
-    </property>
-    <property name="baseSize">
-     <size>
-      <width>0</width>
-      <height>0</height>
-     </size>
-    </property>
-    <property name="maxLength">
-     <number>10</number>
-    </property>
-   </widget>
-   <widget class="QComboBox" name="model_box">
-    <property name="geometry">
-     <rect>
-      <x>100</x>
-      <y>300</y>
-      <width>250</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>16777215</width>
-      <height>16777215</height>
-     </size>
-    </property>
-    <property name="minimumContentsLength">
-     <number>0</number>
-    </property>
-   </widget>
-   <widget class="QLabel" name="mem_1">
-    <property name="geometry">
-     <rect>
-      <x>430</x>
-      <y>331</y>
-      <width>80</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>0</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_6">
-    <property name="geometry">
-     <rect>
-      <x>31</x>
-      <y>516</y>
-      <width>46</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>워런티 1</string>
-    </property>
-    <property name="textFormat">
-     <enum>Qt::AutoText</enum>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="hba_1">
-    <property name="geometry">
-     <rect>
-      <x>430</x>
-      <y>466</y>
-      <width>80</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>0</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_3">
-    <property name="geometry">
-     <rect>
-      <x>31</x>
-      <y>408</y>
-      <width>31</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>NIC 1</string>
-    </property>
-    <property name="textFormat">
-     <enum>Qt::AutoText</enum>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QComboBox" name="op_box">
-    <property name="geometry">
-     <rect>
-      <x>100</x>
-      <y>597</y>
-      <width>250</width>
-      <height>20</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="c_11">
-    <property name="geometry">
-     <rect>
-      <x>380</x>
-      <y>570</y>
-      <width>41</width>
-      <height>20</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLabel" name="hba_2">
-    <property name="geometry">
-     <rect>
-      <x>430</x>
-      <y>493</y>
-      <width>80</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>0</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_25">
-    <property name="geometry">
-     <rect>
-      <x>31</x>
-      <y>381</y>
-      <width>46</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>디스크 2</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_4">
-    <property name="geometry">
-     <rect>
-      <x>31</x>
-      <y>435</y>
-      <width>31</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>NIC 2</string>
-    </property>
-    <property name="textFormat">
-     <enum>Qt::AutoText</enum>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_5">
-    <property name="geometry">
-     <rect>
-      <x>31</x>
-      <y>462</y>
-      <width>51</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>HBA/IB 1</string>
-    </property>
-    <property name="textFormat">
-     <enum>Qt::AutoText</enum>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="c_9">
-    <property name="geometry">
-     <rect>
-      <x>380</x>
-      <y>516</y>
-      <width>41</width>
-      <height>20</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLabel" name="mod_1">
-    <property name="geometry">
-     <rect>
-      <x>430</x>
-      <y>304</y>
-      <width>80</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>0</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="w_2">
-    <property name="geometry">
-     <rect>
-      <x>430</x>
-      <y>547</y>
-      <width>80</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>0</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_12">
-    <property name="geometry">
-     <rect>
-      <x>520</x>
-      <y>280</y>
-      <width>48</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>공급단가</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QComboBox" name="nic_box_2">
-    <property name="geometry">
-     <rect>
-      <x>100</x>
-      <y>435</y>
-      <width>250</width>
-      <height>20</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QComboBox" name="w_box_2">
-    <property name="geometry">
-     <rect>
-      <x>100</x>
-      <y>543</y>
-      <width>250</width>
-      <height>20</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="c_4">
-    <property name="geometry">
-     <rect>
-      <x>380</x>
-      <y>381</y>
-      <width>41</width>
-      <height>20</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="c_5">
-    <property name="geometry">
-     <rect>
-      <x>380</x>
-      <y>408</y>
-      <width>41</width>
-      <height>20</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QComboBox" name="memory_box">
-    <property name="geometry">
-     <rect>
-      <x>100</x>
-      <y>327</y>
-      <width>250</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_23">
-    <property name="geometry">
-     <rect>
-      <x>31</x>
-      <y>543</y>
-      <width>51</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>워런티 ?</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QComboBox" name="w_box_1">
-    <property name="geometry">
-     <rect>
-      <x>100</x>
-      <y>516</y>
-      <width>250</width>
-      <height>20</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="c_12">
-    <property name="geometry">
-     <rect>
-      <x>380</x>
-      <y>597</y>
-      <width>41</width>
-      <height>20</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLabel" name="nic_1">
-    <property name="geometry">
-     <rect>
-      <x>430</x>
-      <y>412</y>
-      <width>80</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>0</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_8">
-    <property name="geometry">
-     <rect>
-      <x>190</x>
-      <y>280</y>
-      <width>52</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>세부 내역</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_9">
-    <property name="geometry">
-     <rect>
-      <x>390</x>
-      <y>280</y>
-      <width>24</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>수량</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="c_10">
-    <property name="geometry">
-     <rect>
-      <x>380</x>
-      <y>543</y>
-      <width>41</width>
-      <height>20</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_24">
-    <property name="geometry">
-     <rect>
-      <x>31</x>
-      <y>354</y>
-      <width>46</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>디스크 1</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="disk_2">
-    <property name="geometry">
-     <rect>
-      <x>430</x>
-      <y>385</y>
-      <width>80</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>0</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="w_1">
-    <property name="geometry">
-     <rect>
-      <x>430</x>
-      <y>520</y>
-      <width>80</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>0</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>270</y>
+      <width>881</width>
+      <height>371</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="10" column="2">
+      <widget class="QLineEdit" name="c_10">
+       <property name="maximumSize">
+        <size>
+         <width>50</width>
+         <height>16777215</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="4">
+      <widget class="QLabel" name="label_38">
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="4">
+      <widget class="QLabel" name="label_40">
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="3">
+      <widget class="QLabel" name="cpu">
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="5">
+      <widget class="QLabel" name="label_43">
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="3">
+      <widget class="QLabel" name="w_2">
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="2">
+      <widget class="QLineEdit" name="c_7">
+       <property name="maximumSize">
+        <size>
+         <width>50</width>
+         <height>16777215</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="3">
+      <widget class="QLabel" name="nic_2">
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="3">
+      <widget class="QLabel" name="nic_1">
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="3">
+      <widget class="QLabel" name="disk_2">
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="3">
+      <widget class="QLabel" name="mem_1">
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="5">
+      <widget class="QLabel" name="sadf_2">
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="2">
+      <widget class="QLineEdit" name="c_9">
+       <property name="maximumSize">
+        <size>
+         <width>50</width>
+         <height>16777215</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="5">
+      <widget class="QLabel" name="label_41">
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="5">
+      <widget class="QLabel" name="label_31">
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="3">
+      <widget class="QLabel" name="hba_2">
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="4">
+      <widget class="QLabel" name="sdfds">
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="5">
+      <widget class="QLabel" name="hba_3">
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="4">
+      <widget class="QLabel" name="label_30">
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="4">
+      <widget class="QLabel" name="wa_2">
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="4">
+      <widget class="QLabel" name="memory_2">
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="5">
+      <widget class="QLabel" name="label_29">
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="4">
+      <widget class="QLabel" name="label_36">
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="4">
+      <widget class="QLabel" name="nic2_2">
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="4">
+      <widget class="QLabel" name="sadf">
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="3">
+      <widget class="QLabel" name="w_1">
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="5">
+      <widget class="QLabel" name="nic2_3">
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="5">
+      <widget class="QLabel" name="memory_3">
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="5">
+      <widget class="QLabel" name="wa_3">
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="2">
+      <widget class="QLineEdit" name="c_11">
+       <property name="maximumSize">
+        <size>
+         <width>50</width>
+         <height>16777215</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="4">
+      <widget class="QLabel" name="label_28">
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="1">
+      <widget class="QComboBox" name="cpu_box">
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>16777215</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="1">
+      <widget class="QComboBox" name="w_box_2">
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>16777215</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="0">
+      <widget class="QLabel" name="label_22">
+       <property name="maximumSize">
+        <size>
+         <width>90</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>CPU 업글</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="5">
+      <widget class="QLabel" name="label_42">
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="12" column="0">
+      <widget class="QLabel" name="label_7">
+       <property name="maximumSize">
+        <size>
+         <width>90</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>*옵션 SW</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::AutoText</enum>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="12" column="4">
+      <widget class="QLabel" name="op_2">
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="12" column="1">
+      <widget class="QComboBox" name="op_box">
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>16777215</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="12" column="2">
+      <widget class="QLineEdit" name="c_12">
+       <property name="maximumSize">
+        <size>
+         <width>50</width>
+         <height>16777215</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="12" column="3">
+      <widget class="QLabel" name="op_1">
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="12" column="5">
+      <widget class="QLabel" name="op_3">
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>90</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>모델</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::AutoText</enum>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="0">
+      <widget class="QLabel" name="label_6">
+       <property name="maximumSize">
+        <size>
+         <width>90</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>워런티 1</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::AutoText</enum>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="0">
+      <widget class="QLabel" name="label_4">
+       <property name="maximumSize">
+        <size>
+         <width>90</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>NIC 2</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::AutoText</enum>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="0">
+      <widget class="QLabel" name="label_5">
+       <property name="maximumSize">
+        <size>
+         <width>90</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>HBA/IB 1</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::AutoText</enum>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="label_24">
+       <property name="maximumSize">
+        <size>
+         <width>90</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>디스크 1</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="0">
+      <widget class="QLabel" name="label_23">
+       <property name="maximumSize">
+        <size>
+         <width>90</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>워런티 ?</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="0">
+      <widget class="QLabel" name="label_21">
+       <property name="maximumSize">
+        <size>
+         <width>90</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>HBA/IB 2</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="label_25">
+       <property name="maximumSize">
+        <size>
+         <width>90</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>디스크 2</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="maximumSize">
+        <size>
+         <width>90</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>메모리</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::AutoText</enum>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLabel" name="label_3">
+       <property name="maximumSize">
+        <size>
+         <width>90</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>NIC 1</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::AutoText</enum>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QComboBox" name="disk_box_1">
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>16777215</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="1">
+      <widget class="QComboBox" name="w_box_1">
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>16777215</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="2">
+      <widget class="QLineEdit" name="c_2">
+       <property name="maximumSize">
+        <size>
+         <width>50</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="baseSize">
+        <size>
+         <width>10</width>
+         <height>0</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="1">
+      <widget class="QComboBox" name="nic_box_2">
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>16777215</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="1">
+      <widget class="QComboBox" name="hba_box_1">
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>16777215</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QComboBox" name="nic_box_1">
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>16777215</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="2">
+      <widget class="QLineEdit" name="c_6">
+       <property name="maximumSize">
+        <size>
+         <width>50</width>
+         <height>16777215</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="2">
+      <widget class="QLineEdit" name="c_3">
+       <property name="maximumSize">
+        <size>
+         <width>50</width>
+         <height>16777215</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="2">
+      <widget class="QLineEdit" name="c_4">
+       <property name="maximumSize">
+        <size>
+         <width>50</width>
+         <height>16777215</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="5">
+      <widget class="QLabel" name="model_3">
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QComboBox" name="disk_box_2">
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>16777215</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="1">
+      <widget class="QComboBox" name="hba_box_2">
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>16777215</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="2">
+      <widget class="QLineEdit" name="c_5">
+       <property name="maximumSize">
+        <size>
+         <width>50</width>
+         <height>16777215</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QComboBox" name="memory_box">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>16777215</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QComboBox" name="model_box">
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="minimumContentsLength">
+        <number>0</number>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="3">
+      <widget class="QLabel" name="mod_1">
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLabel" name="label_8">
+       <property name="text">
+        <string>세부 내역</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QLabel" name="label_9">
+       <property name="text">
+        <string>수량</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QLineEdit" name="c_1">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>10</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>50</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="baseSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maxLength">
+        <number>10</number>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="4">
+      <widget class="QLabel" name="model_2">
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="5">
+      <widget class="QLabel" name="label_13">
+       <property name="text">
+        <string>part No</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="3">
+      <widget class="QLabel" name="label_11">
+       <property name="text">
+        <string>소비자단가</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="3">
+      <widget class="QLabel" name="disk_1">
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="4">
+      <widget class="QLabel" name="label_12">
+       <property name="text">
+        <string>공급단가</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="3">
+      <widget class="QLabel" name="hba_1">
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="2">
+      <widget class="QLineEdit" name="c_8">
+       <property name="maximumSize">
+        <size>
+         <width>50</width>
+         <height>16777215</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+    </layout>
    </widget>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
