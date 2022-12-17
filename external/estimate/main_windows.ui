@@ -90,8 +90,8 @@
    <widget class="QPushButton" name="OK">
     <property name="geometry">
      <rect>
-      <x>650</x>
-      <y>220</y>
+      <x>680</x>
+      <y>230</y>
       <width>91</width>
       <height>28</height>
      </rect>
@@ -104,9 +104,9 @@
     <property name="geometry">
      <rect>
       <x>380</x>
-      <y>170</y>
-      <width>211</width>
-      <height>81</height>
+      <y>140</y>
+      <width>281</width>
+      <height>123</height>
      </rect>
     </property>
     <layout class="QFormLayout" name="formLayout_2">
@@ -124,7 +124,7 @@
       <widget class="QComboBox" name="est_manager">
        <property name="maximumSize">
         <size>
-         <width>300</width>
+         <width>120</width>
          <height>16777215</height>
         </size>
        </property>
@@ -137,6 +137,19 @@
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLabel" name="date">
+       <property name="maximumSize">
+        <size>
+         <width>300</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Today</string>
        </property>
       </widget>
      </item>
@@ -160,16 +173,34 @@
        </property>
       </widget>
      </item>
-     <item row="1" column="1">
-      <widget class="QLabel" name="date">
+     <item row="4" column="0">
+      <widget class="QLabel" name="label_26">
+       <property name="text">
+        <string>견적번호</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QLabel" name="est_num">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="label_27">
+       <property name="text">
+        <string>견적코드</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QComboBox" name="est_code">
        <property name="maximumSize">
         <size>
-         <width>300</width>
+         <width>50</width>
          <height>16777215</height>
         </size>
-       </property>
-       <property name="text">
-        <string>Today</string>
        </property>
       </widget>
      </item>
@@ -180,13 +211,13 @@
      <rect>
       <x>580</x>
       <y>20</y>
-      <width>159</width>
+      <width>251</width>
       <height>91</height>
      </rect>
     </property>
     <layout class="QGridLayout" name="gridLayout_2">
      <item row="2" column="1">
-      <widget class="QLabel" name="label_17">
+      <widget class="QLabel" name="money_sum_1">
        <property name="text">
         <string>0</string>
        </property>
@@ -196,7 +227,7 @@
       </widget>
      </item>
      <item row="3" column="1">
-      <widget class="QLabel" name="label_18">
+      <widget class="QLabel" name="money_sum_2">
        <property name="text">
         <string>0</string>
        </property>
@@ -207,8 +238,14 @@
      </item>
      <item row="4" column="0">
       <widget class="QLabel" name="label_16">
+       <property name="maximumSize">
+        <size>
+         <width>80</width>
+         <height>16777215</height>
+        </size>
+       </property>
        <property name="text">
-        <string>공급금액</string>
+        <string>천단위 절사</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
@@ -217,6 +254,12 @@
      </item>
      <item row="2" column="0">
       <widget class="QLabel" name="label_14">
+       <property name="maximumSize">
+        <size>
+         <width>80</width>
+         <height>16777215</height>
+        </size>
+       </property>
        <property name="text">
         <string>소비자단가</string>
        </property>
@@ -227,6 +270,12 @@
      </item>
      <item row="3" column="0">
       <widget class="QLabel" name="label_15">
+       <property name="maximumSize">
+        <size>
+         <width>80</width>
+         <height>16777215</height>
+        </size>
+       </property>
        <property name="text">
         <string>공급단가</string>
        </property>
@@ -236,7 +285,7 @@
       </widget>
      </item>
      <item row="4" column="1">
-      <widget class="QLabel" name="label_19">
+      <widget class="QLabel" name="tt">
        <property name="text">
         <string>0</string>
        </property>
@@ -273,8 +322,8 @@
    <widget class="QWidget" name="horizontalLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>580</x>
-      <y>120</y>
+      <x>680</x>
+      <y>150</y>
       <width>148</width>
       <height>23</height>
      </rect>
@@ -1481,8 +1530,8 @@
    <widget class="QPushButton" name="count_init">
     <property name="geometry">
      <rect>
-      <x>650</x>
-      <y>180</y>
+      <x>680</x>
+      <y>190</y>
       <width>93</width>
       <height>28</height>
      </rect>

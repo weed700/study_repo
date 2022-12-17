@@ -29,7 +29,12 @@ class MyWindow(QMainWindow, form_class):
                        '이사 김 재 호':['010-7520-9425','justin@gluesys.com','5302'],
                        '대리 우 동 현':['010-5769-7610','dhwoo@gluesys.com','5301'],
                        '대리 김 정':['010-3153-3327','jkim@gluesys.com','5374']}
- 
+    m_name=''
+    m_code=''
+    m_disc=''
+    m_count=''
+    est_code_list = ['(N)', '(E)', '(P)', '(G)', '(A)', '(M)']
+
     def __init__(self):
         super().__init__()
         self.setUI()
@@ -42,13 +47,15 @@ class MyWindow(QMainWindow, form_class):
         self.setupUi(self)  # window 창 
         self.Model_Check() # 모델 체크 함수
         self.Manager()
+        self.Code()
 
         # 오늘 날짜 입력
-        now = QDate.currentDate()
-        self.date.setText(now.toString('yyyy년 MM월 dd일'))
+        self.now = QDate.currentDate()
+        self.date.setText(self.now.toString('yyyy년 MM월 dd일'))
 
-        self.count_init.clicked.connect(self.Count_Init)
 
+        self.count_init.clicked.connect(self.Count_Init) # 수량 초기화 버튼
+        
         self.OK.clicked.connect(self.button) # 최종 버튼
 
     def Count_Init(self):
@@ -58,9 +65,26 @@ class MyWindow(QMainWindow, form_class):
             self.db_val[key][1][0].setText('')
         self.Money_func()
 
+    def Manager_func(self):
+        a = self.sender()
+        #print(a.currentText())
+        self.m_name=a.currentText()
+        self.Num_make()
+
     def Manager(self):
         for m in self.est_manager_list.keys():
             self.est_manager.addItem(m)
+        self.est_manager.currentTextChanged.connect(self.Manager_func)
+
+    def Code_func(self):
+        a= self.sender()
+        self.m_code=a.currentText()
+        self.Num_make()
+
+    def Code(self):
+        for m in self.est_code_list:
+            self.est_code.addItem(m)
+        self.est_code.currentTextChanged.connect(self.Code_func)
 
     # 모델 DB 변수 저장
     def Excel_DB(self):
@@ -92,7 +116,7 @@ class MyWindow(QMainWindow, form_class):
         #for t in set(model_name):
         l=[]
         l2=[]
-            #if 'GW Single' == t or 'GW Cluster' == t:
+
         for a in db.index:
             n=''
             if 'GW Single' == a[0]:
@@ -108,6 +132,11 @@ class MyWindow(QMainWindow, form_class):
                 dic[n]=l2
             
         return dic
+
+    def Count_func(self):
+        c = self.sender()
+        self.m_count=c.text()
+        self.Num_make()
 
     def Ob_db(self,db_key):
         self.db_val = {}
@@ -132,6 +161,7 @@ class MyWindow(QMainWindow, form_class):
             self.db_val[box][1][0].textChanged.connect(self.lineedit_func)
         
         self.disc_box.currentTextChanged.connect(self.Disc_func)
+        self.est_count.textChanged.connect(self.Count_func)
         # 초기화
         for key in self.db_val.keys():
             self.money[key]=[0,1]
@@ -174,19 +204,38 @@ class MyWindow(QMainWindow, form_class):
             self.disc_box.addItem(d)
 
     def Money_func(self):
+        sum_1=0
+        sum_2=0
+
         for key in self.money.keys():
             a=int(self.money[key][0]*self.money[key][1])
             b=int(self.money[key][0]*self.money[key][1]*self.disc)
+            sum_1+=a
+            sum_2+=b
             for temp in self.db_val.keys():
                 if key == temp:
                     self.db_val[key][2][0].setText(format(int(a),',d'))
                     self.db_val[key][3][0].setText(format(int(b),',d'))
-    
+
+        self.money_sum_1.setText(format(sum_1,',d'))
+        self.money_sum_2.setText(format(sum_2,',d'))
+        temp = int(sum_2/10000)*10000
+        self.tt.setText(format(temp,',d'))  
+    def Num_make(self):
+        # 견적 번호 만들기
+        e_num=''
+        self.m_disc=self.disc_box.currentText().split('%')
+        if self.m_name and self.m_code and self.m_disc:
+            e_num='GLS-'+self.now.toString('yyyyMMdd')+'0'+self.m_disc[0]+self.est_count.text()+'-'+self.est_manager_list[self.m_name][2]+self.m_code
+        
+        self.est_num.setText(e_num)
+
     def Disc_func(self):
         d=self.sender()
         val=d.currentText().split('%')
         self.disc=(100-int(val[0]))/100
         self.Money_func()
+        self.Num_make()
 
     def Combobox_detail_list(self,db_key):
         for i in range(0,len(self.detail_model_db[db_key])):
