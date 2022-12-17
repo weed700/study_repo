@@ -21,6 +21,15 @@ for t in set(name):
     print(dic[t])
     print('*****************')
     
+temp ={}
+l = [0,0]
+
+for t in 'a' 'b' 'c':
+    temp[t] = [0,0]
+
+temp['a'][1] = 1
+
+print(temp)
 
 #print(dic['AS500\n일체형'])
 #dic={'AS500\n일체형':l_1, 'AS500\nGateway' : l_2}

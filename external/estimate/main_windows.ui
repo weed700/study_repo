@@ -97,7 +97,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>OK</string>
+     <string>저 장</string>
     </property>
    </widget>
    <widget class="QWidget" name="formLayoutWidget_2">
@@ -273,7 +273,7 @@
    <widget class="QWidget" name="horizontalLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>610</x>
+      <x>580</x>
       <y>120</y>
       <width>148</width>
       <height>23</height>
@@ -353,7 +353,7 @@
     </property>
     <layout class="QGridLayout" name="gridLayout">
      <item row="10" column="2">
-      <widget class="QLineEdit" name="c_10">
+      <widget class="QLineEdit" name="w2_0">
        <property name="maximumSize">
         <size>
          <width>50</width>
@@ -363,7 +363,7 @@
       </widget>
      </item>
      <item row="10" column="4">
-      <widget class="QLabel" name="label_38">
+      <widget class="QLabel" name="w2_2">
        <property name="maximumSize">
         <size>
          <width>100</width>
@@ -379,7 +379,7 @@
       </widget>
      </item>
      <item row="11" column="4">
-      <widget class="QLabel" name="label_40">
+      <widget class="QLabel" name="cpu_2">
        <property name="maximumSize">
         <size>
          <width>100</width>
@@ -395,7 +395,7 @@
       </widget>
      </item>
      <item row="11" column="3">
-      <widget class="QLabel" name="cpu">
+      <widget class="QLabel" name="cpu_1">
        <property name="maximumSize">
         <size>
          <width>100</width>
@@ -411,7 +411,7 @@
       </widget>
      </item>
      <item row="11" column="5">
-      <widget class="QLabel" name="label_43">
+      <widget class="QLabel" name="cpu_3">
        <property name="maximumSize">
         <size>
          <width>100</width>
@@ -427,7 +427,7 @@
       </widget>
      </item>
      <item row="10" column="3">
-      <widget class="QLabel" name="w_2">
+      <widget class="QLabel" name="w2_1">
        <property name="maximumSize">
         <size>
          <width>100</width>
@@ -443,7 +443,7 @@
       </widget>
      </item>
      <item row="7" column="2">
-      <widget class="QLineEdit" name="c_7">
+      <widget class="QLineEdit" name="hba1_0">
        <property name="maximumSize">
         <size>
          <width>50</width>
@@ -453,7 +453,7 @@
       </widget>
      </item>
      <item row="6" column="3">
-      <widget class="QLabel" name="nic_2">
+      <widget class="QLabel" name="nic2_1">
        <property name="maximumSize">
         <size>
          <width>100</width>
@@ -469,7 +469,7 @@
       </widget>
      </item>
      <item row="5" column="3">
-      <widget class="QLabel" name="nic_1">
+      <widget class="QLabel" name="nic1_1">
        <property name="maximumSize">
         <size>
          <width>100</width>
@@ -485,7 +485,7 @@
       </widget>
      </item>
      <item row="4" column="3">
-      <widget class="QLabel" name="disk_2">
+      <widget class="QLabel" name="disk2_1">
        <property name="maximumSize">
         <size>
          <width>100</width>
@@ -501,7 +501,7 @@
       </widget>
      </item>
      <item row="2" column="3">
-      <widget class="QLabel" name="mem_1">
+      <widget class="QLabel" name="memory_1">
        <property name="maximumSize">
         <size>
          <width>100</width>
@@ -517,7 +517,7 @@
       </widget>
      </item>
      <item row="5" column="5">
-      <widget class="QLabel" name="sadf_2">
+      <widget class="QLabel" name="nic1_3">
        <property name="maximumSize">
         <size>
          <width>100</width>
@@ -533,7 +533,7 @@
       </widget>
      </item>
      <item row="9" column="2">
-      <widget class="QLineEdit" name="c_9">
+      <widget class="QLineEdit" name="w1_0">
        <property name="maximumSize">
         <size>
          <width>50</width>
@@ -543,7 +543,7 @@
       </widget>
      </item>
      <item row="8" column="5">
-      <widget class="QLabel" name="label_41">
+      <widget class="QLabel" name="hba2_3">
        <property name="maximumSize">
         <size>
          <width>100</width>
@@ -559,7 +559,7 @@
       </widget>
      </item>
      <item row="4" column="5">
-      <widget class="QLabel" name="label_31">
+      <widget class="QLabel" name="disk2_3">
        <property name="maximumSize">
         <size>
          <width>100</width>
@@ -575,7 +575,7 @@
       </widget>
      </item>
      <item row="8" column="3">
-      <widget class="QLabel" name="hba_2">
+      <widget class="QLabel" name="hba2_1">
        <property name="maximumSize">
         <size>
          <width>100</width>
@@ -591,7 +591,7 @@
       </widget>
      </item>
      <item row="7" column="4">
-      <widget class="QLabel" name="sdfds">
+      <widget class="QLabel" name="hba1_2">
        <property name="maximumSize">
         <size>
          <width>100</width>
@@ -607,7 +607,7 @@
       </widget>
      </item>
      <item row="7" column="5">
-      <widget class="QLabel" name="hba_3">
+      <widget class="QLabel" name="hba1_3">
        <property name="maximumSize">
         <size>
          <width>100</width>
@@ -623,7 +623,7 @@
       </widget>
      </item>
      <item row="4" column="4">
-      <widget class="QLabel" name="label_30">
+      <widget class="QLabel" name="disk2_2">
        <property name="maximumSize">
         <size>
          <width>100</width>
@@ -639,7 +639,7 @@
       </widget>
      </item>
      <item row="9" column="4">
-      <widget class="QLabel" name="wa_2">
+      <widget class="QLabel" name="w1_2">
        <property name="maximumSize">
         <size>
          <width>100</width>
@@ -671,7 +671,7 @@
       </widget>
      </item>
      <item row="3" column="5">
-      <widget class="QLabel" name="label_29">
+      <widget class="QLabel" name="disk1_3">
        <property name="maximumSize">
         <size>
          <width>100</width>
@@ -687,7 +687,7 @@
       </widget>
      </item>
      <item row="8" column="4">
-      <widget class="QLabel" name="label_36">
+      <widget class="QLabel" name="hba2_2">
        <property name="maximumSize">
         <size>
          <width>100</width>
@@ -719,7 +719,7 @@
       </widget>
      </item>
      <item row="5" column="4">
-      <widget class="QLabel" name="sadf">
+      <widget class="QLabel" name="nic1_2">
        <property name="maximumSize">
         <size>
          <width>100</width>
@@ -735,7 +735,7 @@
       </widget>
      </item>
      <item row="9" column="3">
-      <widget class="QLabel" name="w_1">
+      <widget class="QLabel" name="w1_1">
        <property name="maximumSize">
         <size>
          <width>100</width>
@@ -783,7 +783,7 @@
       </widget>
      </item>
      <item row="9" column="5">
-      <widget class="QLabel" name="wa_3">
+      <widget class="QLabel" name="w1_3">
        <property name="maximumSize">
         <size>
          <width>100</width>
@@ -799,7 +799,7 @@
       </widget>
      </item>
      <item row="11" column="2">
-      <widget class="QLineEdit" name="c_11">
+      <widget class="QLineEdit" name="cpu_0">
        <property name="maximumSize">
         <size>
          <width>50</width>
@@ -809,7 +809,7 @@
       </widget>
      </item>
      <item row="3" column="4">
-      <widget class="QLabel" name="label_28">
+      <widget class="QLabel" name="disk1_2">
        <property name="maximumSize">
         <size>
          <width>100</width>
@@ -835,7 +835,7 @@
       </widget>
      </item>
      <item row="10" column="1">
-      <widget class="QComboBox" name="w_box_2">
+      <widget class="QComboBox" name="w2_box">
        <property name="maximumSize">
         <size>
          <width>16777215</width>
@@ -861,7 +861,7 @@
       </widget>
      </item>
      <item row="10" column="5">
-      <widget class="QLabel" name="label_42">
+      <widget class="QLabel" name="w2_3">
        <property name="maximumSize">
         <size>
          <width>100</width>
@@ -922,7 +922,7 @@
       </widget>
      </item>
      <item row="12" column="2">
-      <widget class="QLineEdit" name="c_12">
+      <widget class="QLineEdit" name="op_0">
        <property name="maximumSize">
         <size>
          <width>50</width>
@@ -1148,7 +1148,7 @@
       </widget>
      </item>
      <item row="3" column="1">
-      <widget class="QComboBox" name="disk_box_1">
+      <widget class="QComboBox" name="disk1_box">
        <property name="maximumSize">
         <size>
          <width>16777215</width>
@@ -1158,7 +1158,7 @@
       </widget>
      </item>
      <item row="9" column="1">
-      <widget class="QComboBox" name="w_box_1">
+      <widget class="QComboBox" name="w1_box">
        <property name="maximumSize">
         <size>
          <width>16777215</width>
@@ -1168,7 +1168,7 @@
       </widget>
      </item>
      <item row="2" column="2">
-      <widget class="QLineEdit" name="c_2">
+      <widget class="QLineEdit" name="memory_0">
        <property name="maximumSize">
         <size>
          <width>50</width>
@@ -1184,7 +1184,7 @@
       </widget>
      </item>
      <item row="6" column="1">
-      <widget class="QComboBox" name="nic_box_2">
+      <widget class="QComboBox" name="nic2_box">
        <property name="maximumSize">
         <size>
          <width>16777215</width>
@@ -1194,7 +1194,7 @@
       </widget>
      </item>
      <item row="7" column="1">
-      <widget class="QComboBox" name="hba_box_1">
+      <widget class="QComboBox" name="hba1_box">
        <property name="maximumSize">
         <size>
          <width>16777215</width>
@@ -1204,7 +1204,7 @@
       </widget>
      </item>
      <item row="5" column="1">
-      <widget class="QComboBox" name="nic_box_1">
+      <widget class="QComboBox" name="nic1_box">
        <property name="maximumSize">
         <size>
          <width>16777215</width>
@@ -1214,7 +1214,7 @@
       </widget>
      </item>
      <item row="6" column="2">
-      <widget class="QLineEdit" name="c_6">
+      <widget class="QLineEdit" name="nic2_0">
        <property name="maximumSize">
         <size>
          <width>50</width>
@@ -1224,7 +1224,7 @@
       </widget>
      </item>
      <item row="3" column="2">
-      <widget class="QLineEdit" name="c_3">
+      <widget class="QLineEdit" name="disk1_0">
        <property name="maximumSize">
         <size>
          <width>50</width>
@@ -1234,7 +1234,7 @@
       </widget>
      </item>
      <item row="4" column="2">
-      <widget class="QLineEdit" name="c_4">
+      <widget class="QLineEdit" name="disk2_0">
        <property name="maximumSize">
         <size>
          <width>50</width>
@@ -1260,7 +1260,7 @@
       </widget>
      </item>
      <item row="4" column="1">
-      <widget class="QComboBox" name="disk_box_2">
+      <widget class="QComboBox" name="disk2_box">
        <property name="maximumSize">
         <size>
          <width>16777215</width>
@@ -1270,7 +1270,7 @@
       </widget>
      </item>
      <item row="8" column="1">
-      <widget class="QComboBox" name="hba_box_2">
+      <widget class="QComboBox" name="hba2_box">
        <property name="maximumSize">
         <size>
          <width>16777215</width>
@@ -1280,7 +1280,7 @@
       </widget>
      </item>
      <item row="5" column="2">
-      <widget class="QLineEdit" name="c_5">
+      <widget class="QLineEdit" name="nic1_0">
        <property name="maximumSize">
         <size>
          <width>50</width>
@@ -1319,7 +1319,7 @@
       </widget>
      </item>
      <item row="1" column="3">
-      <widget class="QLabel" name="mod_1">
+      <widget class="QLabel" name="model_1">
        <property name="maximumSize">
         <size>
          <width>100</width>
@@ -1355,7 +1355,7 @@
       </widget>
      </item>
      <item row="1" column="2">
-      <widget class="QLineEdit" name="c_1">
+      <widget class="QLineEdit" name="model_0">
        <property name="enabled">
         <bool>true</bool>
        </property>
@@ -1425,7 +1425,7 @@
       </widget>
      </item>
      <item row="3" column="3">
-      <widget class="QLabel" name="disk_1">
+      <widget class="QLabel" name="disk1_1">
        <property name="maximumSize">
         <size>
          <width>100</width>
@@ -1451,7 +1451,7 @@
       </widget>
      </item>
      <item row="7" column="3">
-      <widget class="QLabel" name="hba_1">
+      <widget class="QLabel" name="hba1_1">
        <property name="maximumSize">
         <size>
          <width>100</width>
@@ -1467,7 +1467,7 @@
       </widget>
      </item>
      <item row="8" column="2">
-      <widget class="QLineEdit" name="c_8">
+      <widget class="QLineEdit" name="hba2_0">
        <property name="maximumSize">
         <size>
          <width>50</width>
@@ -1477,6 +1477,19 @@
       </widget>
      </item>
     </layout>
+   </widget>
+   <widget class="QPushButton" name="count_init">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>180</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>수량 초기화</string>
+    </property>
    </widget>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
