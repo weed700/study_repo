@@ -92,7 +92,7 @@
      <rect>
       <x>680</x>
       <y>230</y>
-      <width>91</width>
+      <width>121</width>
       <height>28</height>
      </rect>
     </property>
@@ -106,7 +106,7 @@
       <x>380</x>
       <y>140</y>
       <width>281</width>
-      <height>123</height>
+      <height>125</height>
      </rect>
     </property>
     <layout class="QFormLayout" name="formLayout_2">
@@ -323,8 +323,8 @@
     <property name="geometry">
      <rect>
       <x>680</x>
-      <y>150</y>
-      <width>148</width>
+      <y>120</y>
+      <width>151</width>
       <height>23</height>
      </rect>
     </property>
@@ -1532,12 +1532,25 @@
      <rect>
       <x>680</x>
       <y>190</y>
-      <width>93</width>
-      <height>28</height>
+      <width>121</width>
+      <height>31</height>
      </rect>
     </property>
     <property name="text">
      <string>수량 초기화</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="manager_add">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>150</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>견적 담당자 추가</string>
     </property>
    </widget>
   </widget>

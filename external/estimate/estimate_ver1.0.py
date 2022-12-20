@@ -62,7 +62,7 @@ class MyWindow(QMainWindow, form_class):
         #print("수량 초기화")
         for key in self.db_val.keys():
             self.money[key][1]=1
-            self.db_val[key][1][0].setText('')
+            self.db_val[key][1][0].setText('1')
         self.Money_func()
 
     def Manager_func(self):
